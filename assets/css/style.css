@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Tenor+Sans&display=swap');
+
+:root{
+    --darkblue-grey: #4D6a6D;
+    --navyblue: #011638;
+    --lightgrey: #E5E5E5;
+    --white: #FFFFFF;
+
+}
+
+header{
+    text-align: center;
+    font-family: 'Gloock';
+    font-size: 70px;
+    color: var(--white); 
+    background-color: var(--darkblue-grey);
+    padding: 15px;
+}
+
+h1{
+    font-family: 'Tenor Sans';
+    font-family: 30px;
+}
+
+h2{
+    font-family: 'Tenor Sans';
+    font-size: 40px;
+    width: 100%;
+}
+
+h3{
+    font-family: 'Tenor Sans';
+    text-align: center;
+    font-size: 30px;
+}
+
+h4{
+    font-family: 'Tenor Sans';
+    font-size: 14px;
+}
+
+
+body{
+    margin: 0px;
+    background-color: var(--lightgrey);
+    border: 3px solid var(--darkblue-grey);
+}
+
+.header{
+    text-align: center;
+}
+
+.skills{
+    text-align: center;
+}
+
+.active{
+    display: flex;
+    color: var(--white);
+    justify-content: space-between;
+}
+
+.active a{
+    padding-left: 10px;
+    color: var(--white);
+}
+
+.active img{
+    width: 5px;
+}
+
+.active a:hover{
+    color: var(--navyblue);
+}
+
+#home{
+    display: flex;
+}
+
+#star1{
+    width: 45%;
+    margin-left: 25%;
+}
+
+#star2{
+    width: 45%;
+    margin-left: 27%;
+}
+
+#star3{
+    width: 45%;
+    margin-left: 25%;
+}
+
+#star4{
+    width: 45%;
+    margin-left: 27%;
+}
+
+p{
+    font-family: 'Tenor Sans';
+    font-size: 20px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav menu li{
+    list-style: none;
+    margin-right: 20px;
+    font-family: 'Gloock';
+    font-size: 30px;  
+    text-align: center;
+}
+
+nav menu li a{
+    color: white;
+
+}
+
+nav menu li a:hover{
+    color: var(--navyblue)
+}
+
+nav{
+    background-color: var(--darkblue-grey);
+    width: 160px;
+}
+
+menu{
+    margin-top: 100%;
+
+}
+
+#overlay-menu-container {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0,0,0,.5);
+    display: none;
+}
+
+.project{
+    font-family: 'Gloock';
+    font-size: 40px;
+    text-align: center; 
+}
+
+.primary{
+    border: 2px solid var(--navyblue);
+    font-family: 'Tenor Sans';
+    border-radius: 4px;
+    font-size: 30px;
+    margin: 10px 15px;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: var(--navyblue);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container{
+    display: flex;
+}
+
+#project-1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+.primary-center{
+    border: 2px solid var(--navyblue);
+    font-family: 'Tenor Sans';
+    border-radius: 4px;
+    font-size: 30px;
+    margin: 10px 15px;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: var(--navyblue);
+    text-decoration: none;
+    display: inline-block;
+}
+
+#my-skills{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#my-skills div{
+    width: 50%;
+}
+
+.profile{
+    margin: 10px;
+}
+
+.center{
+    text-align: center;
+}
+
+#project{
+    text-align: center;
+}
+
+section.images{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+article img{
+    width: 311px;
+    height: 270px;
+    object-fit: cover;
+}
+
+.project{
+    position: relative;
+}
+
+.project-overlay{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 311px;
+    height: 270px;
+    background-color: rgba(77,106,109,.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .5s;
+    position: absolute;
+
+}
+
+.project-overlay:hover{
+    opacity: 1;
+}
+
+.project-names{
+    font-family: 'Gloock';
+    background-color: var(--darkblue-grey);
+}
+footer{
+    outline: medium solid;
+    outline-color: var(--darkblue-grey);
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footer{
+    font-family: 'Gloock';
+    margin-left: 5%;
+    font-size: 50px;
+    width: 30%;
+}
+.footer h2{
+    font-family: 'Gloock';
+    text-align: center;
+}
+
+.footer p{
+    font-family: 'Tenor Sans';
+}
+
+form{
+    width: 50%;
+}
+
+form label{
+    display: block;
+    font-family: 'Tenor Sans';
+    font-size: small;
+    margin-top: 10px;
+}   
+
+form input{
+    background-color: var(--darkblue-grey);
+    border: none;
+    border-radius: 3px;
+    width: 205px;
+    height: 30px;
+    color: white;
+}
+
+form input #email{
+    background-color: var(--darkblue-grey);
+    border: none;
+    border-radius: 3px;
+    width: 416px;
+    height: 30px;
+    color: white;
+}
+
+textarea{
+    background-color: var(--darkblue-grey);
+    font-family: 'Tenor Sans';
+    border: none;
+    border-radius: 3px;
+    height: 179px;
+    width: 417px;
+    color: white;
+}
+
+#email{
+    width: 420px;
+}
+.name{
+    display: flex;
+}
+
+fieldset{
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 5px;
+}
+
+.images{
+    display: flex;
+}
+
+/*mobile css*/
+#mobile-button{
+    display: none;
+}
+
+#close-menu{
+    display: none;
+}
+
+/* mobile design */
+@media(max-width: 914px){
+
+header{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#overlay-menu-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0,0,0,.5);
+}
+
+#overlay-menu{
+    background-color: #D7E5E3;
+    width:50%;
+    margin: 150px auto;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+}
+
+
+
+   
+
+
+body{
+    margin: 0px;
+    background-color: var(--lightgrey);
+    border: 17px solid var(--darkblue-grey);
+}
+
+h1{
+    font-size: 40px;
+}
+
+#project{
+    border: none;
+}
+
+#mobile-button{
+    display: block;
+    background-color: transparent;
+    border: none;
+}
+
+#close-menu{
+    display: block;
+    background-color: transparent;
+    border: none;
+}
+
+.project{
+    font-size: 45px;
+}
+.primary{
+    display: none;
+}
+
+ .my-skills{
+    width: 100%;
+ }
+
+ #profile{
+    width: 100%;
+ }
+
+ #star1{
+    width: 58%;
+ }
+
+ #star2{
+    width: 58%;
+ }
+
+ #star3{
+    width: 58%;
+ }
+
+ #star4{
+    width: 58%; 
+ }
+
+ .profile{
+    width: 400px;
+ }
+}
+
