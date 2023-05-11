@@ -28,6 +28,10 @@ h2{
     width: 100%;
 }
 
+.menu{
+    display: none;
+}
+
 h3{
     font-family: 'Tenor Sans';
     text-align: center;
@@ -132,18 +136,6 @@ menu{
 
 }
 
-#overlay-menu-container {
-
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
-    background-color: rgba(0,0,0,.5);
-    display: none;
-}
-
 .project{
     font-family: 'Gloock';
     font-size: 40px;
@@ -174,6 +166,7 @@ menu{
     width: 50%;
     text-align: center;
 }
+
 .primary-center{
     border: 2px solid var(--navyblue);
     font-family: 'Tenor Sans';
@@ -216,8 +209,8 @@ section.images{
 }
 
 article img{
-    width: 311px;
-    height: 270px;
+    width: 342px;
+    height: 338px;
     object-fit: cover;
 }
 
@@ -230,8 +223,8 @@ article img{
     left: 0;
     bottom: 0;
     right: 0;
-    width: 311px;
-    height: 270px;
+    width: 342px;
+    height: 338px;
     background-color: rgba(77,106,109,.5);
     color: white;
     display: flex;
@@ -251,6 +244,7 @@ article img{
     font-family: 'Gloock';
     background-color: var(--darkblue-grey);
 }
+
 footer{
     outline: medium solid;
     outline-color: var(--darkblue-grey);
@@ -266,6 +260,7 @@ footer{
     font-size: 50px;
     width: 30%;
 }
+
 .footer h2{
     font-family: 'Gloock';
     text-align: center;
@@ -332,8 +327,8 @@ fieldset{
     display: flex;
 }
 
-/*mobile css*/
-#mobile-button{
+                                                                        /*mobile css*/
+#menu-button{
     display: none;
 }
 
@@ -341,8 +336,8 @@ fieldset{
     display: none;
 }
 
-/* mobile design */
-@media(max-width: 914px){
+                                    /* mobile design */
+@media(max-width: 874px){
 
 header{
     text-align: left;
@@ -350,7 +345,18 @@ header{
     justify-content: space-between;
 }
 
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkblue-grey);
+    color: white;
+}
 
+.menu h2{
+    text-align: center;
+    width: 100%;
+    padding-left: 82px;
+}
 #overlay-menu-container {
     position: absolute;
     top: 0;
@@ -359,21 +365,43 @@ header{
     left: 0;
     z-index: 100;
     background-color: rgba(0,0,0,.5);
+    display: none;
+}
+
+menu{
+    margin-top: 0%;
+    padding: 0px;
+}
+
+.active img{
+    display: none;
+}
+
+.active{
+    display: block;
+    border-bottom: 1px var(--darkblue-grey) solid;
+    margin: 0px;
+    padding: 20px;
+}
+
+.active a{
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
 }
 
 #overlay-menu{
-    background-color: #D7E5E3;
+    background-color: var(--lightgrey);
     width:50%;
     margin: 150px auto;
-    border-radius: 20px;
     position: relative;
     text-align: center;
 }
 
-
-
-   
-
+.no-scroll{
+    overflow-y: hidden;
+}
 
 body{
     margin: 0px;
@@ -389,7 +417,7 @@ h1{
     border: none;
 }
 
-#mobile-button{
+#menu-button{
     display: block;
     background-color: transparent;
     border: none;
@@ -399,13 +427,15 @@ h1{
     display: block;
     background-color: transparent;
     border: none;
+   text-align: right;
 }
 
+.images{
+    margin: 10px;
+    justify-content: center;
+}
 .project{
     font-size: 45px;
-}
-.primary{
-    display: none;
 }
 
  .my-skills{
