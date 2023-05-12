@@ -357,6 +357,14 @@ header{
     width: 100%;
     padding-left: 82px;
 }
+
+article img{
+    width: 342px;
+    height: 338px;
+    object-fit: cover;
+    border-radius: 18px;
+    padding: 4px;
+}
 #overlay-menu-container {
     position: absolute;
     top: 0;
@@ -415,6 +423,24 @@ h1{
 
 #project{
     border: none;
+}
+
+.project-overlay{
+    top: 3px;
+    left: 3px;
+    bottom: 0;
+    right: 0;
+    width: 342px;
+    height: 338px;
+    border-radius: 18px;
+    background-color: rgba(77,106,109,.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .5s;
+    position: absolute;
 }
 
 #menu-button{
